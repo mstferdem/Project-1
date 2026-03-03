@@ -1,35 +1,46 @@
 # Project 1 
 # College Recruitment Improvement Study
 
-## Purpose
 
-The CCM Department of Information Technologies aims to enhance its recruitment process and increase enrollment in computing classes and majors. This study focuses on analyzing survey data collected from students in entry-level computing classes and computer literacy courses for non-majors. The goal of the analysis is to provide insights into which students are taking these courses, when and where they are enrolling, and why they choose these courses. These insights will help the department target its recruitment efforts more effectively, particularly for under-represented groups.
+## Computing Majors Survey Analysis (2020-2024)
+## Purpose of the Project
+The primary goal of this project is to explore, clean, and analyze survey data from students enrolled in computing majors at the County College of Morris (CCM). This analysis spans five years (Fall 2020 to Fall 2024) and aims to provide insights into student demographics, degree interests, and the effectiveness of recruitment channels. By standardizing and merging individual survey years, the project identifies trends in student motivations and the factors influencing their decision to attend CCM.
 
-## Project Overview
+## Research Questions
+This project aims to answer the following questions:
 
-This repository contains the first step of a data science project: defining the data science questions based on survey data. The project involves:
+- Which degree programs show the greatest increase or decrease in the percentage of student interest over the years based on survey responses?
 
-1. Reviewing the assigned survey (Majors or Non-Majors, depending on the student ID).
-2. Analyzing the survey results to understand student responses.
-3. Brainstorming data science questions that can be answered using the survey dataset.
-4. Focusing on questions that will help improve enrollment and recruitment strategies.
+- How has the percentage distribution of female students by degree program changed over time?
 
-## Data
+- How has the percentage distribution of male students by degree program changed over time?
 
-- **Majors Survey**: For students whose ID ends in an odd digit.
-- **Non-Majors Survey**: For students whose ID ends in an even digit.
-- Survey files are in spreadsheet format, containing columns that correspond to specific survey questions.
+- Which factors had the greatest impact on students' decision to attend CCM?
 
-## Next Steps
+- How has the way students hear about CCM changed over the years?
 
-The next phase of the project will involve exploratory data analysis (EDA) on the survey dataset to answer the data science questions identified in this step. Insights from this analysis will guide the department in enhancing recruitment strategies and course offerings.
+## Repository Contents
+# Analysis and Code
+project1.ipynb: The main Jupyter Notebook containing the Python code for the data cleaning process. It standardizes long survey question text into shorter, manageable column names (e.g., heard_from_..., decision_impact_...), handles data types, and concatenates individual annual CSV files into a unified dataset for analysis.
 
-## Data Science Questions
+## Datasets
+- Majors Survey Results - Fall 2020.csv: Raw survey data collected during the Fall 2020 semester.
 
-Some example questions that could be explored using the dataset:
+- Majors Survey Results - Fall 2021.csv: Raw survey data collected during the Fall 2021 semester.
 
-1. What are the most common reasons students choose to enroll in computing courses?
-2. Which times of day or days of the week do students prefer for classes?
-3. Are certain courses or instructors associated with higher enrollment rates?
-4. What factors influence course completion and student satisfaction?
-5. How does enrollment vary among different student demographics?
+- Majors Survey Results - Fall 2022.csv: Raw survey data collected during the Fall 2022 semester.
+
+- Majors Survey Results - Fall 2023.csv: Raw survey data collected during the Fall 2023 semester.
+
+- Majors Survey Results - Fall 2024.csv: Raw survey data collected during the Fall 2024 semester.
+
+- New Majors Survey Results - Fall 2020-2024.csv: The final output of the data processing pipeline. This file is a consolidated and cleaned version of all five years of survey data, featuring standardized column headers and consistent data formats ready for visualization.
+
+## Data Standardized in this Project
+- The cleaning process creates a structured dataset with the following key metrics:
+
+- Recruitment Sources: Standardized columns indicating how students heard about CCM (e.g., Web site, Social Media, High School Counselor).
+
+- Decision Impact Factors: Measures of how factors like affordable cost, location, and choice of programs influenced student enrollment.
+
+-Demographics: Standardized values for gender and current degree programs to allow for longitudinal comparison.
