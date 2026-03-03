@@ -1,6 +1,4 @@
 # Project 1 
-# College Recruitment Improvement Study
-
 
 ## Computing Majors Survey Analysis (2020-2024)
 ## Purpose of the Project
@@ -43,4 +41,4 @@ project1.ipynb: The main Jupyter Notebook containing the Python code for the dat
 
 - Decision Impact Factors: Measures of how factors like affordable cost, location, and choice of programs influenced student enrollment.
 
--Demographics: Standardized values for gender and current degree programs to allow for longitudinal comparison.
+- Demographics: Standardized values for gender and current degree programs to allow for longitudinal comparison.
